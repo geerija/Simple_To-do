@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,100;1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+}
+h2 .fa-pencil-square-o {
+  color: #1971c2;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  /*for browsers not supporting linear gradient*/
+  background-color: #74c0fc;
+  /*for browsers supporting linear gradient*/
+  background-image: linear-gradient(to right, #dee2e6, #74c0fc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+}
+.wrapper {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 0 3rem 0;
+  border-radius: 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 3rem;
+}
+.container .input_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+  width: 90%;
+}
+
+input {
+  width: 80%;
+  height: 3rem;
+  border: 3px solid #1971c2;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  outline: none;
+  margin-right: 2rem;
+  padding: 0 1rem;
+}
+
+#btn {
+  background-color: #1971c2;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+#btn:hover {
+  background-color: #256097;
+  transition: all 1s ease-in;
+}
+
+.list_show .list_details li {
+  list-style: none;
+  user-select: none;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.list_show .list_details li::before {
+  content: "\f1db";
+  padding-right: 1rem;
+  font-family: FontAwesome;
+  color: black;
+  display: inline-block;
+}
+.list_show .list_details .checked {
+  color: black;
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+.list_show .list_details .checked::before {
+  content: "\f058";
+  padding-right: 1rem;
+  font-family: FontAwesome;
+  color: #1971c2;
+  /* display: inline-block; */
+}
+.list_show .list_details li .remove {
+  display: none;
+}
+.cross {
+  color: black;
+  display: inline-block;
+}
+.list_show .list_details li span {
+  /* pointer-events: none; */
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.list_show .list_details li span:hover {
+  background-color: #e9ecef;
+}
+/*media queries*/
+@media (max-width: 800px) {
+}

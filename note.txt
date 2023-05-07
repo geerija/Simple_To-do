@@ -1,0 +1,17 @@
+/*******COLORS USED******/
+font colors: #08121E;
+background: #74c0fc, #dee2e6,
+btn:#1971c2
+/*************FONTS USED****************/
+1. font-family: 'Ysabeau', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,100;1,200&display=swap');
+
+2. font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/***************SVG ICONS***************/
+1. circle:
+
+2.done circle:
+Check Circle	check-circle	
+<i class="fa fa-check-circle"></i>
+unicode: f058	,Web Application Icons	todo done agree accept confirm ok	1.0
